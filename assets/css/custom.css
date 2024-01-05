@@ -1,0 +1,66 @@
+.logo-header {
+    max-width: 100px;
+    max-height: 100px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-header:hover {
+    transform: scale(1.25);
+}
+
+
+.logo-about {
+    max-width: 200px;
+    max-height: 200px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    background-image: linear-gradient(90deg, #02A1B7 , #840196 );
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-links li {
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links li:hover {
+    background-color: transparent;
+}
+
+.navbar-links li::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-links li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.navbar-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-links li:hover a {
+    color: #23297a;
+}
